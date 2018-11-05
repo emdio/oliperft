@@ -415,16 +415,16 @@ u64 _bishop135(int f, u64 board, int t) {
 			return (t < 2) ? free : (t == 2 ? occ : xray);
 }
 
-void display64(u64 bb) {
-	int i, j;
-	for (i = 0; i < 8; i++) {
-		for (j = 0; j < 8; j++) {
-			printf(" %d", TEST(j + (7-i)*8, bb) ? 1 : 0);
-		}
-		printf("\n");
-	}
-	printf("\n");
-}
+//void display64(u64 bb) {
+//    int i, j;
+//    for (i = 0; i < 8; i++) {
+//        for (j = 0; j < 8; j++) {
+//            printf(" %d", TEST(j + (7 - i)*8, bb) ? 1 : 0);
+//        }
+//        printf("\n");
+//    }
+//    printf("\n");
+//}
 
 void displayb() {
 	int i, j;
