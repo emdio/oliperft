@@ -416,17 +416,17 @@ u64 _bishop135(int f, u64 board, int t) {
 }
 
 //void display64(u64 bb) {
-//    int i, j;
-//    for (i = 0; i < 8; i++) {
-//        for (j = 0; j < 8; j++) {
-//            printf(" %d", TEST(j + (7 - i)*8, bb) ? 1 : 0);
-//        }
-//        printf("\n");
-//    }
-//    printf("\n");
+//	int i, j;
+//	for (i = 0; i < 8; i++) {
+//		for (j = 0; j < 8; j++) {
+//			printf(" %d", TEST(j + (7-i)*8, bb) ? 1 : 0);
+//		}
+//		printf("\n");
+//	}
+//	printf("\n");
 //}
 
-void displayb() {
+void displayBoard() {
 	int i, j;
 	for (i = 0; i < 8; i++) {
 		for (j = 0; j < 8; j++) {
@@ -932,7 +932,7 @@ int main(int argc, char **argv)
 	_init_pawns(pmoves, pcaps, 0);
 	_init_pawns(pmoves + 64, pcaps + 64, 1);
 	_parse_fen(sfen);
-	displayb();
+        displayBoard();
 
 	t1 = getTime();
 
